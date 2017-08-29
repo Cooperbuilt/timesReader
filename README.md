@@ -1,11 +1,14 @@
 # Times Reader Application
 bootstrapped with create react app
+Development code available at https://github.com/Cooperbuilt/timesReader
 
 ## Getting Started
 
-### `npm start`
+### `npm install`
 
-Development code available at https://github.com/Cooperbuilt/timesReader
+then
+
+### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
