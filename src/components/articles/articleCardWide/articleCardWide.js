@@ -12,8 +12,8 @@ export default class ArticleCardWide extends Component {
        <div className="card--wide">
          <img src={this.props.image} alt={this.props.image} />
          <div className="card__content">
-           <div className="card__title">{this.props.title}</div>
-           <p className="card__text">{this.props.body}</p>
+           <div className="card__title--large">{this.props.title}</div>
+           <p className="card__text--large">{this.props.body}</p>
            <span className="card__body__credits">
             <span className="card__body__credits--byline">
               {this.props.byline}
