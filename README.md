@@ -16,6 +16,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+## Testing
+For jest / enzyme based tests, run `npm test`
+Test files are co-located with their respective components.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
