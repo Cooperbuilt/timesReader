@@ -17,7 +17,7 @@ export default class Nav extends Component {
         </div>
         <div className="navbar__links">
           <NavLink
-            to="/"
+            exact to="/"
             className="navbar__links--unselected"
             activeClassName="navbar__links--selected"
           >
