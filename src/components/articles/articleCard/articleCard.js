@@ -43,8 +43,9 @@ export default class ArticleCard extends Component {
            <p className="card__text">{this.props.body}</p>
            <span className="card__body__credits">
             <span className="card__body__credits--byline">
-              {this.props.byline}
+              {this.props.byline}<br />
             </span>
+
             <span className="card__body__credits--date">
               {this.props.time}
             </span>

@@ -73,9 +73,9 @@ export default class Articles extends Component {
           key = {Math.random() + doc.headline.main}
           title = {shorten(doc.headline.main, 45)}
           image = {getImageUrl(doc)}
-          body = {shorten(doc.snippet, 80)+ '...'}
+          body = {shorten(doc.snippet, 50)+ '...'}
           url = {doc.web_url}
-          byline = {shorten(doc.byline.original, 40)}
+          byline = {shorten(doc.byline.original, 30)}
           time = {dateComparison(doc)}
         />
       )
