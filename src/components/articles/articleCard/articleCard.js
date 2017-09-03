@@ -16,20 +16,24 @@ export default class ArticleCard extends Component {
   }
 
   setImage() {
-    return this.state.image;
+    if (this.state.image === ""){
+      return {
+        display: 'none'
+      }
+    } else {
+      return {
+        flex: '1',
+        minWidth: '250px',
+        minHeight: '250px',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundImage: "url("+ this.state.image  + ")"
+      }
+    }
   }
 
   render() {
-    const image = this.setImage();
-    console.log(image);
-    const imageStyle = {
-      flex: '1',
-      minWidth: '250px',
-      minHeight: '250px',
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundImage: "url("+ image  + ")"
-    }
+    const imageStyle = this.setImage();
     return (
       <li className="cards__item" onClick={this.goToArticle.bind(this)}>
        <div className="card">

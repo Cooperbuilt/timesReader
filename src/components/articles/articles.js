@@ -39,7 +39,8 @@ export default class Articles extends Component {
   render() {
     const articleList = this.props.articles.docs;
     const firstArticle = articleList.slice(0,1);
-    const otherArticles = articleList.slice(1);
+    const nextTwoArticles = articleList.slice(1,3);
+    const otherArticles = articleList.slice(3);
     const firstArticleUI = firstArticle.map(doc =>
       (
         <ArticleCardWide
@@ -51,6 +52,19 @@ export default class Articles extends Component {
           byline = {shorten(doc.byline.original, 40)}
           time = {dateComparison(doc)}
         />
+      )
+    )
+    const noImageArticles = nextTwoArticles.map(doc =>
+      (
+        <ArticleCard
+        key = {Math.random() + doc.headline.main}
+        title = {shorten(doc.headline.main, 45)}
+        image = {""}
+        body = {shorten(doc.snippet, 80)+ '...'}
+        url = {doc.web_url}
+        byline = {shorten(doc.byline.original, 40)}
+        time = {dateComparison(doc)}
+      />
       )
     )
     const articleUI = otherArticles.map(doc =>
@@ -68,7 +82,12 @@ export default class Articles extends Component {
     )
     return (
       <ul className="articles__container">
+        <div className="articles__container--top">
           {firstArticleUI}
+          <div className="articles__container--side">
+            {noImageArticles}
+          </div>
+        </div>
           {articleUI}
       </ul>
     );

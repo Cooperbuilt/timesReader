@@ -1,11 +1,19 @@
 .articles__container  {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
   list-style: none;
   margin: 0 auto;
   padding: 0;
   max-width: 1200px;
   border: 1px solid black;
+}
+
+.articles__container--top {
+  border: 1px solid black;
+  display: flex;
+}
+
+.articles__container--side {
+  display: flex;
+  flex-direction: column;
 }
 
