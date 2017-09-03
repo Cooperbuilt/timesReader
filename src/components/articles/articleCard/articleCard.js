@@ -3,14 +3,37 @@ import PropTypes from 'prop-types';
 import './articleCard.css';
 
 export default class ArticleCard extends Component {
+  constructor(props) {
+    super(props);
+    this.setImage = this.setImage.bind(this);
+    this.state = {
+      image: this.props.image
+    };
+  }
+
   goToArticle() {
     window.location = this.props.url;
   }
+
+  setImage() {
+    return this.state.image;
+  }
+
   render() {
+    const image = this.setImage();
+    console.log(image);
+    const imageStyle = {
+      flex: '1',
+      minWidth: '250px',
+      minHeight: '250px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundImage: "url("+ image  + ")"
+    }
     return (
       <li className="cards__item" onClick={this.goToArticle.bind(this)}>
        <div className="card">
-         <img src={this.props.image} alt={this.props.image} />
+         <div style={imageStyle}></div>
          <div className="card__content">
            <div className="card__title">{this.props.title}</div>
            <p className="card__text">{this.props.body}</p>
