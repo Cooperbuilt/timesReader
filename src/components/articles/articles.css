@@ -17,3 +17,13 @@
   flex-direction: column;
 }
 
+@media (max-width: 1050px) {
+  .articles__container--top {
+    flex-wrap: wrap;
+  }
+
+  .articles__container--side {
+    display: flex;
+    flex-direction: row;
+  }
+}
