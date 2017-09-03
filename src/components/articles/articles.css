@@ -4,18 +4,22 @@
   margin: 0 auto;
   padding: 0;
   max-width: 1200px;
-  border: 1px solid black;
 }
 
 .articles__container--top {
-  border: 1px solid black;
   display: flex;
 }
 
 .articles__container--side {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
+
+.articles__container--side:last-child {
+  padding-bottom: 0!important;
+}
+
 
 @media (max-width: 1050px) {
   .articles__container--top {
@@ -25,5 +29,6 @@
   .articles__container--side {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }

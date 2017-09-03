@@ -38,17 +38,17 @@ export default class ArticleCardWide extends Component {
     return (
       <li className="cards__item--wide" onClick={this.goToArticle.bind(this)}>
        <div className="card--wide">
-         <div className="card__content">
+         <div className="card__content--wide">
 
            <div className="card__content__top">
 
             <div className="card__content__top--text">
               <div className="card__title--large">{this.props.title}</div>
-              <span className="card__body__credits">
-                <span className="card__body__credits--byline">
+              <span className="card__wide--credits">
+                <span className="card__wide--credits--byline">
                   {this.props.byline}
                 </span>
-                <span className="card__body__credits--date">
+                <span className="card__wide--credits--date">
                   {this.props.time}
                 </span>
               </span>
