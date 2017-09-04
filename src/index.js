@@ -18,7 +18,7 @@ const App = () => {
           )}
         />
         <Route
-          exact path=""
+          exact path="/"
           render={() => (
             <DataContainer desk="" />
           )}
