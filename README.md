@@ -23,6 +23,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 
+## Views
+Tested across all breakpoints on the three evergreen browsers. 
+
+## Desktop view
 
 
 
