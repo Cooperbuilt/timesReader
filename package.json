@@ -2,7 +2,7 @@
   "name": "timesreader",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://myname.github.io/timesapp",
+  "homepage": "http://cooperbuilt.github.io/timesreader",
   "dependencies": {
     "axios": "^0.16.2",
     "babel-core": "^6.26.0",
