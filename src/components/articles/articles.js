@@ -13,6 +13,7 @@ const getImageUrl = (doc) => {
 }
 
 const dateComparison = (doc) => {
+  // eslint-disable-next-line
   Date.prototype.yyyymmdd = function() {
     var mm = (this.getMonth() + 1).toString();
     var dd = this.getDate().toString();

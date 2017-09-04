@@ -46,7 +46,10 @@ class DataContainer extends Component {
         })
       }
       if (e.keyCode === 13) {
-        this.setState({ desk: this.state.search.toLowerCase().replace(/(^| )(\w)/g, s => s.toUpperCase())})
+        this.setState({
+          // Convert search to Title Case with regex
+          desk: this.state.search.toLowerCase().replace(/(^| )(\w)/g, s => s.toUpperCase())
+        })
         Api.getStories(this.state.desk, this.state.current, this.state.search)
         .then(body => {
           this.setState({

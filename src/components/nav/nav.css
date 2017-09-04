@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .navbar__headline {
     justify-content: flex-start;
     padding-left: 10px;
@@ -24,6 +24,7 @@
 .navbar__headline__search {
   position: absolute;
   right: 40px;
+  top: 15%;
   border-radius: 20px;
   background-color: grey;
   outline: none;
