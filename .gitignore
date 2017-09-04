@@ -6,6 +6,9 @@
 # testing
 /coverage
 
+# api key
+/src/utils/secrets.js
+
 # production
 /build
 
