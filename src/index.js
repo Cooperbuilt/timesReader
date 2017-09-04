@@ -32,7 +32,7 @@ const App = () => {
         <Route
           path='/politics'
           render={() => (
-            <DataContainer desk="Politics" />
+            <DataContainer desk="Washington" />
           )}
         />
         <Route
