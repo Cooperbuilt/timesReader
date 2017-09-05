@@ -1,12 +1,16 @@
 ## Getting Started
 
-### `npm install`
+As a quick note, the API key has not been committed to this repo. To make this app work, please fill in API key variable within `src/utils/api.js`.
 
-then
+## Steps
+1) Fill in the API key variable.
+2) Clone this repo
+3) CD into repo
+4) Run the following two commands - 
+ `npm install` then  `npm start`
+ 
+This will run the app in the development mode.<br>
 
-### `npm start`
-
-Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
@@ -14,7 +18,7 @@ You will also see any lint errors in the console.
 
 bootstrapped with create react app
 
-### `npm run build`
+### For production code, run `npm run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
