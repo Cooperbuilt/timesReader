@@ -3,9 +3,9 @@
 As a quick note, the API key has not been committed to this repo. To make this app work, please fill in API key variable within `src/utils/api.js`.
 
 ## Steps
-1) Fill in the API key variable.
-2) Clone this repo
-3) CD into repo
+1) Clone this repo
+2) CD into repo
+3) Fill in the API key variable.
 4) Run the following two commands - 
  `npm install` then  `npm start`
  
